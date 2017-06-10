@@ -18,15 +18,15 @@ $ go get -u github.com/elpinal/color
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
 
-    "github.com/elpinal/color"
+	"github.com/elpinal/color"
 )
 
 func main() {
-    w := color.New(os.Stdout, color.Blue)
-    fmt.Fprint(w, "Hello")
+	w := color.New(os.Stdout, color.Blue)
+	fmt.Fprint(w, "Hello")
 }
 ```
 
