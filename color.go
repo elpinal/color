@@ -43,3 +43,7 @@ func (c *Writer) Write(b []byte) (int, error) {
 	}
 	return len(b), nil
 }
+
+func Wrap(s string, color int) string {
+	return fmt.Sprintf("\033[%vm%s\033[0m", color, s)
+}
